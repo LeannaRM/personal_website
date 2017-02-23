@@ -16,10 +16,26 @@
 		<h3 class="title title_singlearticle">Loading Polyfills Only When Needed</h3>
 		<h4 class="date date_singlearticle">September 27, 2016</h4>
 		<div class="greyline"></div>
-		<p class="maincontent maincontent_singlearticle">New JavaScript and HTML features are being introduced all the time that make our lives as developers easier. </p>
-		<p class="maincontent maincontent_singlearticle">In many cases, these new features are so helpful we choose to use them on production websites before they're fully implemented in all browsers. To not break the experience for users on older browsers, we of course include polyfills for any not-fully-supported features.</p>
-		<p class="maincontent maincontent_singlearticle">The problem with this approach is it prioritizes...</p>
-	</div>
 
+		<p class="maincontent maincontent_singlearticle">New JavaScript and HTML features are being introduced all the time that make our lives as developers easier. </p>
+		<p class="maincontent maincontent_singlearticle note"><span>Note: </span>In many cases, these new features are so helpful we choose to use them on production websites before they're fully implemented in all browsers. To not break the experience for users on older browsers, we of course include polyfills for any not-fully-supported features.</p>
+		<p class="maincontent maincontent_singlearticle">The problem with this approach is it prioritizes...</p>
+		<div class="greyline"></div>
+
+		<div class="footnote_container">
+			<h3 class="title title_footnote">Footnotes:</h3>
+			<ol>
+				<li class="maincontent maincontent_footnote"><p>Application-level dependencies that are conditionally loaded are still deterministic within an app's module dependency graph. Polyfills on the other hand, are dependent on both whether the module is ever loaded as well as whether the browser supports the API natively. This means mechanisms like Webpack's code splitting feature are not themselves sufficient to conditionally load polyfills; an additional wrapper module is still necessary to run the feature detect (see previous attempts to accomplish this).</p></li>
+				<li class="maincontent maincontent_footnote"><p>Internet Explorer versions before 9 do not support the onload method. If you need to support these old browsers, you also have to add an onreadystate handler.</p></li>
+				<li class="maincontent maincontent_footnote"><p>Autoprefixer does this via browserlist and its custom usage data option.</p></li>
+		</div>
+
+		<div class="twittershare_container">
+			<span class="fa fa-twitter twittershare_bird"></span>
+			<p class="maincontent twittershare_note">If you liked this article and think others should read it, please 
+				<a href="https://twitter.com/intent/tweet?text=Check%20out%20this%20article%20by%20Leanna McDonald!&url=https://www.google.com" class="twitter-share-button">share it on Twitter.</a>
+			</p>
+		</div>
+	</div>
 </body>
 </html>
