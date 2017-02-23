@@ -6,10 +6,26 @@ font-family: Open Sans,Helvetica Neue,sans-serif;
 	background-color: rgb(64, 64, 64);
 	color: rgb(230,230,230);
 	padding: 17px;
+	height: 50px;
 }
 
 .name, .links, .pagelabel {
 	text-transform: uppercase;
+}
+
+.hamburger_container {
+	border: 2px solid rgb(230,230,230);;
+	border-radius: 5px;
+	float:right;
+	padding:5px;
+	margin: 15px;
+}
+.fa-bars {
+	font-size: 20px !important;
+}
+.hamburger_container:hover {
+	border-color: red;
+	cursor:pointer;
 }
 
 .name {
@@ -31,6 +47,9 @@ font-family: Open Sans,Helvetica Neue,sans-serif;
 	height: 50px;
 	display:flex;
 	align-items: center;
+/*	position:absolute;
+	left:0;
+	top:;*/
 }
 .links_containercenter {
 	width:100%;
