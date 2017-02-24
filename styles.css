@@ -47,12 +47,17 @@ font-family: Open Sans,Helvetica Neue,sans-serif;
 	height: 50px;
 	display:flex;
 	align-items: center;
-/*	position:absolute;
-	left:0;
-	top:;*/
+	position:absolute;
+	top: 40px;
+	transition: top 1s;
+	width: 100%;
+	z-index: -1;
 }
 .links_containercenter {
 	width:100%;
+}
+.showlinks {
+	top: 93px;
 }
 
 .fa {
@@ -95,7 +100,7 @@ font-family: Open Sans,Helvetica Neue,sans-serif;
 	color:rgb(64, 64, 64);
 	font-size: 9pt;
 	float:right;
-	margin: 10px;
+	margin: 10px 20px 10px 0;
 	text-decoration: none;
 }
 .links:hover, .title_articlelist:hover{
@@ -259,6 +264,8 @@ li p {
     width: 100%;
     margin: 0 auto;
     padding-top: 66.286%;
+    position: relative;
+    z-index: -2;
 }
 @media (min-width: 570px) {
 	.hero_image {
